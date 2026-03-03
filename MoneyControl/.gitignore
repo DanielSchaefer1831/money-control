@@ -1,0 +1,17 @@
+# Build-Ordner (Der "Müll", den wir vorhin löschen mussten)
+[Bb]in/
+[Oo]bj/
+
+# Visual Studio Cache und Einstellungen
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Betriebssystem-Dateien
+Thumbs.db
+.DS_Store
+
+# Veröffentlichte Dateien
+publish/

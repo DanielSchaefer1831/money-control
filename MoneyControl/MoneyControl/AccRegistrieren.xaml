@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MoneyControl.AccRegistrieren"
+             Title="AccRegistrieren"
+             Shell.NavBarIsVisible="False"
+             NavigationPage.HasNavigationBar="False">
+    <Grid>
+
+        <!-- Background for the app -->
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="#4A90E2" Offset="0.0"/>
+                <GradientStop Color="#C2E0FF" Offset="1.0"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        
+        <ScrollView>
+            <VerticalStackLayout Margin="20, 40, 20, 0" Spacing="25">
+
+                <!-- MC-Logo -->
+                <Image Source="mc_logo2.png"
+                       HeightRequest="180"
+                       WidthRequest="180"/>
+                
+                <!-- Register-Label -->
+                <Label x:Name="lblRegister"
+                       Text="Registrierung"
+                       HorizontalTextAlignment="Center"
+                       FontSize="40"
+                       FontAttributes="Bold"/>
+                
+                <!-- Username-Input for register -->
+                <Border x:Name="brdUsernameRegister"
+                        Stroke="Gray"
+                        StrokeThickness="2"
+                        StrokeShape="RoundRectangle 25"
+                        BackgroundColor="LightGray"
+                        Padding="15, 0, 5, 0">
+                    <Grid ColumnDefinitions="30, *">
+                        <Image Grid.Column="0"
+                               x:Name="imgUserProfileRegister"
+                               Source="benutzerprofil.png"
+                               HeightRequest="30"
+                               WidthRequest="30"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Center"/>
+
+                        <Entry x:Name="entUsernameRegister"
+                               Grid.Column="1"
+                               Placeholder="Benutzername eingeben"
+                               PlaceholderColor="Black"
+                               FontSize="15"
+                               Margin="5,5,0,5"/>
+                    </Grid>
+                </Border>
+                
+                <!-- Password-Input to enter password -->
+                <VerticalStackLayout Spacing="10">
+                    <Border x:Name="brdPasswordRegister"
+                            Stroke="Gray"
+                            StrokeThickness="2"
+                            StrokeShape="RoundRectangle 25"
+                            BackgroundColor="LightGray"
+                            Padding="15, 5, 10, 5">
+                        <Grid ColumnDefinitions="*, 35">
+                            <Entry x:Name="entPasswordRegister"
+                                   Grid.Column="0"
+                                   Placeholder="Passwort eingeben"
+                                   IsPassword="False" 
+                                   PlaceholderColor="Black"
+                                   FontSize="15"/>
+
+                            <ImageButton x:Name="btnImageChangePasswordRegister"
+                                         Grid.Column="1"
+                                         Source="show.png"
+                                         HeightRequest="30"
+                                         WidthRequest="30"
+                                         VerticalOptions="Center"
+                                         Clicked="PasswordImage"/>
+                        </Grid>
+                    </Border>
+
+                    <!-- Password-Input to repeat password -->
+                    <Border x:Name="brdConfirmPasswordRegister"
+                            Stroke="Gray"
+                            StrokeThickness="2"
+                            StrokeShape="RoundRectangle 25"
+                            BackgroundColor="LightGray"
+                            Padding="15, 5, 10, 5">
+                        <Grid ColumnDefinitions="*, 35">
+                            <Entry x:Name="entConfirmPasswordRegister"
+                                   Grid.Column="0"
+                                   Placeholder="Passwort wiederholen"
+                                   IsPassword="False"
+                                   PlaceholderColor="Black"
+                                   FontSize="15"/>
+
+                            <ImageButton x:Name="btnImageChangeConfirmPasswordRegister"
+                                         Grid.Column="1"
+                                         Source="show.png"
+                                         HeightRequest="30"
+                                         WidthRequest="30"
+                                         VerticalOptions="Center"
+                                         Clicked="ConfirmPasswordImage"/>
+                        </Grid>
+                    </Border>
+                </VerticalStackLayout>
+                
+                <!-- Create-Button to create the password -->
+                <Button x:Name="btnConfirmPasswordRegister"
+                        Text="Erstellen"
+                        FontSize="15"
+                        CornerRadius="25"
+                        BorderColor="Gray"
+                        BorderWidth="2"
+                        HeightRequest="55"
+                        Clicked="OnConfirmRegistrationClicked">
+                    <Button.Background>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                            <GradientStop Color="#003366" Offset="0.0"/>
+                            <GradientStop Color="#0052CC" Offset="0.33"/>
+                            <GradientStop Color="#007BFF" Offset="0.66"/>
+                            <GradientStop Color="#66B2FF" Offset="1.0"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
+    
+</ContentPage>
