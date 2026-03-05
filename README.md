@@ -94,5 +94,26 @@ Das Projekt dient als **Lernprojekt**, um Erfahrung zu sammeln mit:
 
 ---
 
-<img src="Images/Anmeldungsseite.jpg" alt="Anmeldung" width="250" />
+<div style="display: flex; flex-wrap: wrap; gap: 10px;">
+
+<img src="Images/Anmeldungsseite.jpg" alt="Anmeldung" width="250"/>
+<img src="Images/Registrierungsseite.jpg" alt="Registrierung" width="250"/>
+<img src="Images/Dashboardseite.jpg" alt="Dashboard" width="250"/>
+
+<img src="Images/Kategorie_waehlen.jpg" alt="Kategorie auswählen" width="250"/>
+<img src="Images/Ausgabe_ausfuellen.jpg" alt="Ausgabe ausfüllen" width="250"/>
+<img src="Images/Ausgabe_gespeichert.jpg" alt="Ausgabe gespeichert" width="250"/>
+
+<img src="Images/Ausgaben_anzeigen.jpg" alt="Ausgabe anzeigen" width="250"/>
+<img src="Images/Ausgabe_loeschen_Button.jpg" alt="Ausgabe Button" width="250"/>
+<img src="Images/Ausgabe_loeschen_Popup.jpg" alt="Ausgabe löschen" width="250"/>
+
+<img src="Images/Abmeldung_Popup.jpg" alt="Abmeldung Popup" width="250"/>
+<img src="Images/Konto_loeschen_Popup.jpg" alt="Konto löschen" width="250"/>
+<img src="Images/Ausgabe_Betrag_Fehler.jpg" alt="Ausgabe Betrag Fehler" width="250"/>
+
+<img src="Images/Fehler_Popup.jpg" alt="Fehler Popup" width="250"/>
+<img src="Images/Benutzername_existiert_Popup.jpg" alt="Benutzername existiert bereits" width="250"/>
+
+</div>
 
