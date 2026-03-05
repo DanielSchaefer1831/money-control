@@ -92,3 +92,7 @@ Das Projekt dient als **Lernprojekt**, um Erfahrung zu sammeln mit:
 
 🚧 Das Projekt befindet sich aktuell **noch in Entwicklung** und neue Funktionen werden **schrittweise hinzugefügt**.
 
+---
+
+<img src="Images/Anmeldungsseite.jpg" alt="Anmeldung" width="250" />
+
